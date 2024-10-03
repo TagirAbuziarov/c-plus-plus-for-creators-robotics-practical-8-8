@@ -1,18 +1,16 @@
 
 
-#include <QPushButton>
-#include <QHBoxLayout>
-#include <QApplication>
-
-#include <QDir>
-#include <QString>
-#include <QImage>
-#include <QPainter>
 #include <chrono>
 #include <complex>
 #include <math.h>
 
+#include <QApplication>
+#include <QDir>
+#include <QString>
+#include <QImage>
+#include <QPainter>
 #include <QDebug>
+
 #include "snake.h"
 
 const QSize Snake::cell_size_{SNAKE_CELL_SIZE, SNAKE_CELL_SIZE};
@@ -69,7 +67,7 @@ void Snake::initGame()
 {
     // Сброс флага окончания игры
     this->is_game_over_ = false;
-    
+
     /*
     Использование текущего времени в качестве seed для генератора случайных 
     чисел 
