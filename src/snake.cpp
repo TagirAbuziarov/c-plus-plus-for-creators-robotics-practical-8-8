@@ -1,5 +1,3 @@
-
-
 #include <chrono>
 #include <complex>
 #include <math.h>
